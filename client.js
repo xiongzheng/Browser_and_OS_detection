@@ -99,6 +99,10 @@
 			subString : "iPhone",
 			identity : "iPhone/iPod"
 		}, {
+			string : navigator.userAgent,
+			subString : "Android",
+			identity : "Android"
+		}, {
 			string : navigator.platform,
 			subString : "Linux",
 			identity : "Linux"
@@ -127,6 +131,10 @@
 			string : navigator.userAgent,
 			subString : "Mac OS X",
 			identityRegExGroups : /Mac OS X ([^_|^.)]+)/gi
+		}, {
+			string : navigator.userAgent,
+			subString : "Android",
+			identityRegExGroups : /Android ([^;)]+)/gi
 		}, {
 			string : navigator.userAgent,
 			subString : "Linux",
