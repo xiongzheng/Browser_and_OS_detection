@@ -6,7 +6,7 @@
 		document.write("browser: "+window.client.browser+"|"+window.client.browserVersion+"<br />");
 		
 		document.write("sr: "+window.screen.availWidth+"*"+window.screen.height+"<br />");
-		document.write("language: "+window.navigator.language+"<br />");
+		document.write("language: "+(window.navigator.language||window.navigator.browserLanguage).toLowerCase()+"<br />");
 	</script>
 </body>
 </html>
