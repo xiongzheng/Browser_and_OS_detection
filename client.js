@@ -97,7 +97,11 @@
 		}, {
 			string : navigator.userAgent,
 			subString : "iPhone",
-			identity : "iPhone/iPod"
+			identity : "iPhone"
+		}, {
+			string : navigator.userAgent,
+			subString : "iPad",
+			identity : "iPad"
 		}, {
 			string : navigator.userAgent,
 			subString : "Android",
@@ -131,6 +135,14 @@
 			string : navigator.userAgent,
 			subString : "Mac OS X",
 			identityRegExGroups : /Mac OS X ([^_|^.)]+)/gi
+		}, {
+			string : navigator.userAgent,
+			subString : "iPhone OS",
+			identityRegExGroups : /iPhone ([^_)]+)/gi
+		}, {
+			string : navigator.userAgent,
+			subString : "iPad;CPU OS",
+			identityRegExGroups : /CPU ([^_)]+)/gi
 		}, {
 			string : navigator.userAgent,
 			subString : "Android",
